@@ -42,3 +42,16 @@ You can also run the program locally by `python grabber.py > ./streams.m3u8` or 
 - [ ] Rewrite `youtubeLink.txt` to be a JSON file
 - ~~Support for EPG thumbnails from stream thumbnails~~
 - ~~Support for TV guides/EPG matching~~
+
+## Contributions and support
+Please report the following using [Issues]([url](https://github.com/dp247/StreamsToM3U8/issues/new)):
+- Bugs - such as something within the code breaking
+- Enhancements - such as support for more sites
+
+Please do not: 
+- Report broken streams - this isn't a definitive list and is a repository that's designed to be forked!
+- Attempt to make a PR with new streams - for the same reasoning as above
+
+### Support
+You can find my contact details on my profile page. Please remember that I am a solo developer and will help where I can, but please do not make demands. Reporting an issue/contacting me does not guarantee a solution/response.
+
