@@ -1,5 +1,6 @@
 #! /usr/bin/python3
 import os
+import sys
 from datetime import datetime, timedelta
 from urllib.parse import urlparse
 
@@ -165,10 +166,28 @@ def grab_twitch(url: str):
 channel_name = ''
 channel_id = ''
 category = ''
+file_name = ''
 
 # Open text file and parse stream information and URL
-with open('./streams.txt', encoding='utf-8') as f:
-    print("#EXTM3U")
+if len(sys.argv) == 1:
+    file_name = './streams.txt'
+else:
+    if len(sys.argv) == 2:
+        file_name = str(sys.argv[1])
+        if not os.path.isfile(file_name):
+            print(sys.argv[1])
+            print('Argument must be an existing filename! Script will be terminated.')
+            exit()
+    else: 
+        print(sys.argv[0])
+        print(sys.argv[1])
+        print(f'\nStartargument Länge: {len(sys.argv)}')
+        print('Only one filename accepted! Script will be terminated.')
+        exit()
+#print(file_name)
+with open(file_name, encoding='utf-8') as f:
+    if file_name == './streams.txt':
+        print("#EXTM3U")
     for line in f:
         line = line.strip()
         if not line or line.startswith('##'):
