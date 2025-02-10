@@ -5,7 +5,6 @@ import sys
 #from bs4 import BeautifulSoup
 import requests
 
-tz = pytz.timezone('Europe/London')
 channels = []
 
 def grab_youtube(url: str):
