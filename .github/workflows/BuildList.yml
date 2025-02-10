@@ -25,8 +25,3 @@ jobs:
           cat ./euronews.m3u >> ./iptv_liste.m3u
           cat ./iptv2.m3u >> ./iptv_liste.m3u
           echo M3U update complete.          
-          git status
-          git add .
-          git status
-          git commit -m "Playlist updated."
-          git push
