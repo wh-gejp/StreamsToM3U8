@@ -1,0 +1,6 @@
+#!/bin/bash
+python3 -m pip install requests
+
+python3 grabberOD.py euronews.txt > ./euronews.m3u
+
+echo M3U update complete.
