@@ -22,7 +22,10 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
-          python3 grabberOD.py euronews.txt > euronews.m3u
+          cat ./iptv1.m3u > ./iptv_liste.m3u
+          cat ./euronews.m3u >> ./iptv_liste.m3u
+          cat ./iptv2.m3u >> ./iptv_liste.m3u
+          echo M3U update complete.          
           git status
           git add .
           git status
