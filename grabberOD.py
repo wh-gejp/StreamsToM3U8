@@ -21,6 +21,8 @@ Grabs the live-streaming M3U8 file from YouTube
     soup = BeautifulSoup(stream_info.text, features="html.parser")
 
     if '.m3u8' not in response or stream_info.status_code != 200:
+        print(f'\nStatus Code: {stream_info.status_code}')
+        print(respond)
         print("https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4")
         return
     end = response.find('.m3u8') + 5
