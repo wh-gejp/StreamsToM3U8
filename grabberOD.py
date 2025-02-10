@@ -1,12 +1,8 @@
 #! /usr/bin/python3
 import os
 import sys
-#from datetime import datetime, timedelta
-#from urllib.parse import urlparse
 
-#import pytz
 import requests
-#from lxml import etree
 from bs4 import BeautifulSoup
 
 channels = []
@@ -82,7 +78,6 @@ with open(file_name, encoding='utf-8') as f:
             print(
                 f'\n#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}", {channel_name}')
         else:
-            #if urlparse(line).netloc == 'www.youtube.com':
             grab_youtube(line)
 
 # Remove temp files from project dir
