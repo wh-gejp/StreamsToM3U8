@@ -1,12 +1,8 @@
 #! /usr/bin/python3
 import os
 import sys
-#from datetime import datetime, timedelta
-#from urllib.parse import urlparse
 
-#import pytz
 import requests
-#from lxml import etree
 from bs4 import BeautifulSoup
 
 tz = pytz.timezone('Europe/London')
