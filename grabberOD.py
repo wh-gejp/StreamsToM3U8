@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import os
 import sys
+from urllib.parse import urlparse
 
 #from bs4 import BeautifulSoup
 import requests
