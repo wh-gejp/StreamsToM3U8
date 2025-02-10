@@ -1,12 +1,12 @@
 #! /usr/bin/python3
 import os
 import sys
-from datetime import datetime, timedelta
-from urllib.parse import urlparse
+#from datetime import datetime, timedelta
+#from urllib.parse import urlparse
 
-import pytz
+#import pytz
 import requests
-from lxml import etree
+#from lxml import etree
 from bs4 import BeautifulSoup
 
 channels = []
