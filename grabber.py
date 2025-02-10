@@ -186,8 +186,8 @@ else:
         exit()
 #print(file_name)
 with open(file_name, encoding='utf-8') as f:
-    if file_name == './streams.txt':
-        print("#EXTM3U")
+    #if file_name == './streams.txt':
+    print("#EXTM3U")
     for line in f:
         line = line.strip()
         if not line or line.startswith('##'):
