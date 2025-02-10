@@ -1,6 +1,7 @@
 name: OnDemandGrabber
 
 on:
+  workflow_dispatch:
 
 env:
   GH_USERNAME: ${{ github.actor }}
