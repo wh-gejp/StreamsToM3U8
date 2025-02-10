@@ -26,3 +26,4 @@ jobs:
           cat ./iptv2.m3u >> ./iptv_liste.m3u
           echo M3U update complete.          
           git commit -a -m "Playlist updated."
+          git push
