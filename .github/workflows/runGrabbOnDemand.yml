@@ -26,5 +26,5 @@ jobs:
           git status
           git add .
           git status
-          git commit -m "Playlist updated."
+          git commit -a -m "Playlist updated."
           git push
