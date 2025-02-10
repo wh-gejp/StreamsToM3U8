@@ -23,6 +23,8 @@ jobs:
           git config --global user.email "dp247@hll.localhost"
           git config --global user.name "dp247"
           chmod +x exec_grabber.sh && ./exec_grabber.sh
-          git add -A
+          git status
+          git add .
+          git status
           git commit -m "Playlist updated."
           git push
