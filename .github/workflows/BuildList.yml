@@ -1,0 +1,30 @@
+name: BuildList
+
+on:
+  workflow_dispatch:
+
+env:
+  GH_USERNAME: ${{ github.actor }}
+  
+jobs:
+
+  runCode:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build List
+
+        run: |
+          git config --global user.name "${GH_USERNAME}"
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config user.email 
+          git config user.name
+          python3 grabberOD.py euronews.txt > euronews.m3u
+          git status
+          git add .
+          git status
+          git commit -m "Playlist updated."
+          git push
