@@ -47,10 +47,9 @@ https://zdf-hls-17.akamaized.net/hls/live/2016500/de/veryhigh/master.m3u8
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="CBS News" tvg-id="CBSNews247.us" group-title="International;Nachrichten" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/cbsn.png",CBSN
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
-#EXTM3U
 
 #EXTINF:-1 tvg-id="EuronewsGerman.yt" tvg-name="Euronews DE" group-title="News", Euronews DE
-https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1739191701/ei/NaGpZ-iMArvQ6dsPq-_UsQw/ip/78.34.22.161/id/CQ3KsEbsYHs.2/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AUWDL3wVTGzJcPK9TrRbbiwbOMeH96hSl2etcMlfqi-50uH56H7M_ai84LdHDOgbSfiLtcTREOEW-dBv/spc/RjZbSdctIMIIYyWbRccotb0KHFCDJYRDwQoT6Ym7bDGnQW2tMge5qsh8spNW4RiQiDU8oVU/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/keepalive/yes/fexp/51326932%2C51355912%2C51371294/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgXjVO3Z8vQaD328cor9QROrbjPLCnUy2FDDiUwA_Ecg4CIC-kKSR-FdlVsX1zDS4LuTcg0yUU6rHgDPEnY4CNGdAW/file/index.m3u8
+https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4
 #EXTINF:-1 tvg-name="Al Jazeera" tvg-id="AlJazeera.nws" group-title="International;Nachrichten" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/aljazeeraenglish.png",Al Jazeera English
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-name="NRWision HD" tvg-id="NRWision.de" group-title="Lokal" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/nrwision.png",NRWision HD
