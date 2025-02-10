@@ -4,7 +4,7 @@ import sys
 #from urllib.parse import urlparse
 
 import requests
-#from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
 
 channels = []
 
@@ -20,7 +20,6 @@ Grabs the live-streaming M3U8 file from YouTube
     stream_info = requests.get(url, timeout=15)
     response = stream_info.text
     soup = BeautifulSoup(stream_info.text, features="html.parser")
-
 
     if '.m3u8' not in response or stream_info.status_code != 200:
         print("https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4")
