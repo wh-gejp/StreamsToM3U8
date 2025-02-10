@@ -4,4 +4,4 @@ python3 -m pip install beautifulsoup4
 
 python3 grabberOD.py euronews.txt > ./euronews.m3u
 
-echo M3U update complete.
+echo euronews.m3u update complete.
