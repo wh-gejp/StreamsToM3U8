@@ -2,7 +2,7 @@
 import os
 import sys
 
-import BeautifulSoup
+import BeautifulSoup4
 import requests
 
 tz = pytz.timezone('Europe/London')
