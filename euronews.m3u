@@ -1,4 +1,5 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="EuronewsGerman.yt" tvg-name="Euronews DE" group-title="News", Euronews DE
-https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1739226991/ei/DyuqZ9itJ7KBi9oP8bqw4Qo/ip/78.34.22.161/id/CQ3KsEbsYHs.2/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AUWDL3xde_pvXb9ieFixtnx-EXJZrYSdMyMenayR4hDzEz97jXyABbt9tZ_oJ_HFPtL0juKtN98LXstp/spc/RjZbSVbKhqmIbeD5yei7SivXIMB1ODT7BM9c06DVMUm23x6Lv96WUgnuqxk5TcHtzMK0za8/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/keepalive/yes/fexp/51326932%2C51355912%2C51371294/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgRQ0oR8hc3sQsuguXuSHJnySWRHdT5iFUO-DQ1xfcG1ECIHZmUfZgjDOhrFx8bKPsYEYsMbMnfv7YxAzOPAYFe5UF/file/index.m3u8
+
+Status Code: 200
