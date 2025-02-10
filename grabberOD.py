@@ -4,7 +4,9 @@ import sys
 from datetime import datetime, timedelta
 from urllib.parse import urlparse
 
+import pytz
 import requests
+from lxml import etree
 from bs4 import BeautifulSoup
 
 channels = []
