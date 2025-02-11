@@ -29,6 +29,7 @@ jobs:
           git config user.email 
           git config user.name
           chmod +x exec_grabber.sh && ./exec_grabber.sh
+          git add iptv_liste.m3u
           git status
-          git commit -am "m3u Playlist updated."
+          git commit -m "m3u Playlist updated."
           git push
