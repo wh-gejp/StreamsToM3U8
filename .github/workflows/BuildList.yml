@@ -21,9 +21,10 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
-          cat ./iptv1.m3u > ./iptv_liste.m3u
-          cat ./euronews.m3u >> ./iptv_liste.m3u
-          cat ./iptv2.m3u >> ./iptv_liste.m3u
-          echo M3U update complete.          
-          git commit -a -m "Playlist updated."
+          git rm iptv_liste.m3u
+          git commit -am "iptv_liste.m3u deleted"
+          chmod +x exec_mergeFiles.sh && ./exec_mergeFiles.sh
+          git add -f iptv_liste.m3u
+          git status
+          git commit -m "iptv_liste.m3u playlist updated."
           git push
