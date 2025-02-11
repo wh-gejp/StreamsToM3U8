@@ -28,6 +28,7 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
+          pwd
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git status
           git commit -m "m3u Playlist updated."
@@ -35,5 +36,6 @@ jobs:
 
       - name: Merge Files
         run: |
+          pwd
           chmod +x exec_mergeFiles.sh && ./exec_mergeFiles.sh
 
