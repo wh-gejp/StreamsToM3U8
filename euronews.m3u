@@ -1,0 +1,6 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="EuronewsGerman.yt" tvg-name="Euronews DE" group-title="News", Euronews DE
+
+## Request    : https://www.youtube.com/@euronews/live
+https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4
