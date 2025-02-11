@@ -30,7 +30,7 @@ jobs:
           git config user.name
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git status
-          git add -A
+          git add iptv_liste.m3u
           git status
           git commit -a -m "m3u Playlists updated."
           git push
