@@ -19,21 +19,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
       - name: Grab Link
-
-        run: |
           git config --global user.name "${GH_USERNAME}"
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
-          git rm euronews.m3u
-          git rm iptv_list.m3u
-          git commit -a -m "m3u files deleted"
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git status
-          git add -
+          git add -A
           git status
           git commit -a -m "m3u Playlists updated."
           git push
