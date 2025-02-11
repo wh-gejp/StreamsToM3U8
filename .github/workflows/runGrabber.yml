@@ -28,9 +28,12 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
+          git rm euronews.m3u
+          git rm iptv_list.m3u
+          git commit -a -m "m3u files deleted"
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git status
-          git add .
+          git add -
           git status
-          git commit -a -m "Playlist updated."
+          git commit -a -m "m3u Playlists updated."
           git push
