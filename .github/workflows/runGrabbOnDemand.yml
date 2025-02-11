@@ -22,9 +22,10 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
-          chmod +x exec_grabbOD.sh && ./exec_grabbOD.sh
+          git rm euronews.m3u
+          git commit -am "euronwews.m3u deleted"
+          chmod +x exec_grabber.sh && ./exec_grabber.sh
+          git add -f euronews.m3u
           git status
-          git add .
-          git status
-          git commit -a -m "Playlist updated."
+          git commit -m "euronews.m3u playlist updated."
           git push
