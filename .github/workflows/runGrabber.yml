@@ -33,11 +33,16 @@ jobs:
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git add -f euronews.m3u
           git status
-          git commit -m "m3u Playlist updated."
+          git commit -m "euronews.m3u playlist updated."
           git push
 
       - name: Merge Files
         run: |
-          pwd
+          git rm iptv_liste.m3u
+          git commit -am "iptv_liste.m3u deleted"
           chmod +x exec_mergeFiles.sh && ./exec_mergeFiles.sh
+          git add -f iptv_liste.m3u
+          git status
+          git commit -m "iptv_liste.m3u playlist updated."
+          git push
 
