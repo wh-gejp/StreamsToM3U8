@@ -24,7 +24,7 @@ jobs:
           git config user.name
           git rm euronews.m3u
           git commit -am "euronwews.m3u deleted"
-          chmod +x exec_grabberOD.sh && ./exec_grabberOD.sh
+          chmod +x exec_grabbOD.sh && ./exec_grabbOD.sh
           git add -f euronews.m3u
           git status
           git commit -m "euronews.m3u playlist updated."
