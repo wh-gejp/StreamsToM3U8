@@ -28,6 +28,7 @@ jobs:
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
+          git reset iptv_liste.m3u
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git add iptv_liste.m3u
           git status
