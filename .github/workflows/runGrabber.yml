@@ -29,6 +29,7 @@ jobs:
           git config user.email 
           git config user.name
           pwd
+          git worktree list
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git status
           git commit -m "m3u Playlist updated."
