@@ -31,8 +31,8 @@ jobs:
           pwd
           git worktree list
           chmod +x exec_grabber.sh && ./exec_grabber.sh
-          git status
           git add -f euronews.m3u
+          git status
           git commit -m "m3u Playlist updated."
           git push
 
