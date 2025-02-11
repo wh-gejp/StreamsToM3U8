@@ -30,6 +30,8 @@ jobs:
           git config user.name
           pwd
           git worktree list
+          git rm euronews.m3u
+          git commit -am "euronwews.m3u deleted"
           chmod +x exec_grabber.sh && ./exec_grabber.sh
           git add -f euronews.m3u
           git status
