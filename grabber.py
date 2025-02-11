@@ -90,6 +90,7 @@ Grabs the live-streaming M3U8 file from YouTube
 
 
     if '.m3u8' not in response or stream_info.status_code != 200:
+        print(f'\n## Request    : {url}')
         print("https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4")
         return
     end = response.find('.m3u8') + 5
