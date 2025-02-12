@@ -43,11 +43,13 @@ Grabs the live-streaming M3U8 file from YouTube
             break
         else:
             tuner += 5
-    print(f"{link[start: end]}")
+            print(f"{link[start: end]}")
+            print (f'\n')
 
 channel_name = ''
 channel_id = ''
 category = ''
+logo = ''
 file_name = ''
 
 # Open text file and parse stream information and URL
@@ -79,11 +81,12 @@ with open(file_name, encoding='utf-8') as f:
             channel_name = line[0].strip()
             channel_id = line[1].strip()
             category = line[2].strip().title()
+            logo = line[3].strip()
             print(
-                f'\n#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}", {channel_name}')
+                f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}" tv=logo="{logo}", {channel_name}')
         else:
             grab_youtube(line)
-
+            
 # Remove temp files from project dir
 if 'temp.txt' in os.listdir():
     os.system('rm temp.txt')
