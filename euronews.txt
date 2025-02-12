@@ -1,7 +1,8 @@
-## FORMAT: <channel name> || <channel id> || <category>
+## FORMAT: <channel name> || <channel id> || <category> || <logo URL>
 ## <channel name> can be anything - either stream or channel name. It will appear on the EPG though.
 ## <channel id> is used to match EPG data to the M3U8 playlist, so make it short and with no spaces. End it in '.yt' to show its from YouTube.
 ## <category> is used to group streams, so something like 'Music' or 'News' is recommended.
+## <logo URL> is the URL of a .png-file of the channel logo
 ##
 ## Examples:
 ## Twitch:
@@ -13,7 +14,7 @@
 ## YouTube:
 ## Sky News || SkyNews.yt || News
 ## https://www.youtube.com/watch?v=w9uJg68CV4g
-Euronews DE || EuronewsGerman.yt || News || https://i.imgur.com/8t9mdg9.png
-https://www.youtube.com/@euronews/live
-##https://www.youtube.com/watch?v=CQ3KsEbsYHs
+## Euronews DE || EuronewsGerman.yt || News || https://i.imgur.com/8t9mdg9.png 
+Euronews DE || EuronewsGerman.yt || News || https://raw.github.com/wh-ge/StreamsToM3U8/main/euronews.png
+https://www.youtube.com/watch?v=CQ3KsEbsYHs
 
