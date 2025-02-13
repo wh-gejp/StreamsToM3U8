@@ -24,7 +24,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         
-      - name: Grab Link
+      - name: Grab euronews
         run: |
           git config --global user.name "${GH_USERNAME}"
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
@@ -38,6 +38,10 @@ jobs:
           git commit -m "${CHANNEL_NAME}.m3u playlist updated."
           git push
 
+      - name: Grab DW
+        run: |
+          gh workflow run Grabb_DW
+          
       - name: Merge Files
         run: |
           git rm ${CHANNEL_LIST}.m3u
