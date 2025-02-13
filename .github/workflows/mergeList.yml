@@ -1,4 +1,4 @@
-name: mergeList
+name: MergeList
 
 on:
   workflow_dispatch:
