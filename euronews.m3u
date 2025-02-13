@@ -1,5 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="EuronewsGerman.yt" tvg-name="Euronews DE" group-title="News" tvg-logo="https://raw.github.com/wh-ge/StreamsToM3U8/main/euronews.png", Euronews DE
-https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4
-## Request    : https://www.youtube.com/watch?v=CQ3KsEbsYHs
-## Status Code: 200
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1739482365/ei/nRCuZ5vRMaK16dsPqPrmyA0/ip/78.34.22.161/id/CQ3KsEbsYHs.2/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51357435/txs/51357435%2C51357436%2C51357437/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AUWDL3zUj0PE8t1NmHAmscgbYG6xhM5PnZIgxuUsX5sKi1wq3b6ES3rOOilrR7N_yqDqgpto-s8nI7MZ/spc/RjZbSY7OGdYVc5leuz01v6dU1375C88ToHlGgBSd_zsEcEfO5r8B4WIPCLHKlXshdKiAcZs/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51326932%2C51355912/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgVnMgnV-Nq5bdntEDBdOdArsA2J5CQ2tUQRyCpc9itmYCIG9KXFqnZNQC5GMjmrRF2jRN_RXW8xf3QKdbe1w08MIW/file/index.m3u8
+
+

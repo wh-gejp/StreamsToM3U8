@@ -1,5 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="DWNews.yt" tvg-name="DW News" group-title="News" tvg-logo="https://raw.github.com/wh-ge/StreamsToM3U8/main/dw.png", DW News
-https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4
-## Request    : https://www.youtube.com/watch?v=tZT2MCYu6Zw
-## Status Code: 200
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1739482374/ei/phCuZ5WXF5Gv6dsPgo3AiQM/ip/78.34.22.161/id/tZT2MCYu6Zw.35/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AUWDL3yClmspe5M_GRHQvSaWHqDgEaMcK7G8gjUY_SdD4oBDiZoZmcdTHCge93-lQXAmwUZYxuMDqdzn/spc/RjZbSU4IjVrnLeMIW9nz7FZOqnq-3mbd7SZ2BJkkpSBFzLRfOm1Nh73yHGS4q7A-X5OT7wI/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/keepalive/yes/fexp/51326932%2C51355912%2C51387516/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgffHi2AP62UzziRUL2Lycyxk8Kn_l-UNMPTESbjMFXHcCIFWB0mu-M3p4Ut1ieyvM91ayJYQM_-0flnyWV2ClSMtx/file/index.m3u8
+
+
