@@ -166,6 +166,7 @@ def grab_twitch(url: str):
 channel_name = ''
 channel_id = ''
 category = ''
+logo = ''
 file_name = ''
 
 # Open text file and parse stream information and URL
@@ -197,8 +198,9 @@ with open(file_name, encoding='utf-8') as f:
             channel_name = line[0].strip()
             channel_id = line[1].strip()
             category = line[2].strip().title()
+            logo = line[3].strip()
             print(
-                f'\n#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}", {channel_name}')
+                f'\n#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}" tvg-logo="{logo}", {channel_name}')
         else:
             if urlparse(line).netloc == 'www.youtube.com':
                 grab_youtube(line)
