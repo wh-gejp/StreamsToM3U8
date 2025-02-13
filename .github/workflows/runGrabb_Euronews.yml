@@ -1,0 +1,31 @@
+name: Grabb_Euronews
+
+on:
+  workflow_dispatch:
+
+env:
+  GH_USERNAME: ${{ github.actor }}
+  CHANNEL_NAME: 'euronews'
+jobs:
+
+  runCode:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Grab euronews
+
+        run: |
+          git config --global user.name "${GH_USERNAME}"
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config user.email 
+          git config user.name
+          git rm ${CHANNEL_NAME}.m3u
+          git commit -am "${CHANNEL_NAME}.m3u deleted"
+          chmod +x exec_grabbOD.sh && ./exec_grabbOD.sh ${CHANNEL_NAME}
+          git add -f ${CHANNEL_NAME}.m3u
+          git status
+          git commit -m "${CHANNEL_NAME}.m3u playlist updated."
+          git push
