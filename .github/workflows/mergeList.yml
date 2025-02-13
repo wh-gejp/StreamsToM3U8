@@ -5,7 +5,7 @@ on:
 
 env:
   GH_USERNAME: ${{ github.actor }}
-  CHANNEL_List: 'iptv_liste'
+  CHANNEL_LIST: 'iptv_liste'
   
 jobs:
 
