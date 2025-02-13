@@ -1,0 +1,47 @@
+name: Grabb_And_Merge
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+  
+env:
+  GH_USERNAME: ${{ github.actor }}
+  
+jobs:
+
+  runCode:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Grab Link
+        run: |
+          git config --global user.name "${GH_USERNAME}"
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config user.email 
+          git config user.name
+          git rm euronews.m3u
+          git commit -am "euronwews.m3u deleted"
+          chmod +x exec_grabber.sh && ./exec_grabber.sh
+          git add -f euronews.m3u
+          git status
+          git commit -m "euronews.m3u playlist updated."
+          git push
+
+      - name: Merge Files
+        run: |
+          git rm iptv_liste.m3u
+          git commit -am "iptv_liste.m3u deleted"
+          chmod +x exec_mergeFiles.sh && ./exec_mergeFiles.sh
+          git add -f iptv_liste.m3u
+          git status
+          git commit -m "iptv_liste.m3u playlist updated."
+          git push
