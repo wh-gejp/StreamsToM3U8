@@ -23,7 +23,7 @@ jobs:
           git config user.email 
           git config user.name
           git rm ${CHANNEL_NAME}.m3u
-          git commit -am "dw.m3u deleted"
+          git commit -am "${CHANNEL_NAME}.m3u deleted"
           chmod +x exec_grabbOD.sh && ./exec_grabbOD.sh ${CHANNEL_NAME}
           git add -f ${CHANNEL_NAME}.m3u
           git status
