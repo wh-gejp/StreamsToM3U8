@@ -11,6 +11,7 @@ on:
   
 env:
   GH_USERNAME: ${{ github.actor }}
+  GH_TOKEN: ${{ github.token }}
   CHANNEL_NAME: 'euronews'
   CHANNEL_LIST: 'iptv_liste'
   
