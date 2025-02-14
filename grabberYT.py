@@ -18,7 +18,7 @@ Grabs the live-streaming M3U8 file from YouTube
     requests.packages.urllib3.disable_warnings()
     #headers = {'Content-Type': 'text/html'}
     #stream_info = requests.get(url, headers=headers, timeout=15)
-    stream_info = requests.get(url, timeout=15)
+    stream_info = requests.get(url, timeout=15, allow_redirects = True)
     response = stream_info.text
     soup = BeautifulSoup(stream_info.text, features="html.parser")
 
