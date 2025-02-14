@@ -20,7 +20,7 @@ URL
 - Channel Name - the title of the channel and/or live stream. It will appear in the EPG using this name.
 - Channel ID - a short identifier for the channel. Usually ends in `.XX`, where XX is the platform - e.g. `ExampleStream.yt` for YouTube streams, or `TestStream.dm` for Dailymotion ones.
 - Category - the type of stream. This is used to group the channels in the playlist, so something like 'Music' or 'News' is a good idea.
-- Logo URL - the URL of the logo of the channel.
+- Logo URL - the URL of the logo file for the channel. The file format should be .png.
 - URL - the URL of the stream. It should be the full URL (including "https://www."), and not a shortened version (youtu.be links are not supported)
 
 3. After saving changes, either wait for the cron job to run (this repo's job runs at 00:00, 03:00, 06:00, 09:00, 12:00, 15:00 and 18:00), or start the `LinkGrabber` workflow manually (repo > Actions tab > LinkGrabber > Run workflow).
