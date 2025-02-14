@@ -24,7 +24,7 @@ jobs:
           git config user.name
           git rm ${CHANNEL_NAME}.m3u
           git commit -am "${CHANNEL_NAME}.m3u deleted"
-          chmod +x exec_grabbOD.sh && ./exec_grabbOD.sh ${CHANNEL_NAME}
+          chmod +x exec_grabbYT.sh && ./exec_grabbYT.sh ${CHANNEL_NAME}
           git add -f ${CHANNEL_NAME}.m3u
           git status
           git commit -m "${CHANNEL_NAME}.m3u playlist updated."
