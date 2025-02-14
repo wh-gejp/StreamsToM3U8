@@ -14,12 +14,13 @@ With thanks to [@victorlish](https://github.com/victorlish/YouTubeLinkGrabber) f
 1. Open the `streams.txt` file.
 2. Add to the file with the following information for each stream:
 ```
-Channel Name || Channel ID || Category
+Channel Name || Channel ID || Category || Logo URL
 URL
 ``` 
 - Channel Name - the title of the channel and/or live stream. It will appear in the EPG using this name.
 - Channel ID - a short identifier for the channel. Usually ends in `.XX`, where XX is the platform - e.g. `ExampleStream.yt` for YouTube streams, or `TestStream.dm` for Dailymotion ones.
 - Category - the type of stream. This is used to group the channels in the playlist, so something like 'Music' or 'News' is a good idea.
+- Logo URL - the URL of the logo of the channel.
 - URL - the URL of the stream. It should be the full URL (including "https://www."), and not a shortened version (youtu.be links are not supported)
 
 3. After saving changes, either wait for the cron job to run (this repo's job runs at 00:00, 03:00, 06:00, 09:00, 12:00, 15:00 and 18:00), or start the `LinkGrabber` workflow manually (repo > Actions tab > LinkGrabber > Run workflow).
@@ -38,13 +39,13 @@ You can also run the program locally by `python grabber.py > ./streams.m3u8` or 
 
 
 ## Future additions
-- [ ] Add in channel icons
+- ~~Add in channel icons~~
 - [ ] Rewrite `youtubeLink.txt` to be a JSON file
 - ~~Support for EPG thumbnails from stream thumbnails~~
 - ~~Support for TV guides/EPG matching~~
 
 ## Contributions and support
-Please report the following using [Issues]([url](https://github.com/dp247/StreamsToM3U8/issues/new)):
+Please report the following using [Issues]([url](https://github.com/wh-ge/StreamsToM3U8/issues/new)):
 - Bugs - such as something within the code breaking
 - Enhancements - such as support for more sites
 
