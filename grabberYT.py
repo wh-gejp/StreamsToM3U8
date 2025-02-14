@@ -16,9 +16,10 @@ Grabs the live-streaming M3U8 file from YouTube
         url = url.split('&')[0]
 
     requests.packages.urllib3.disable_warnings()
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
     #headers = {'Content-Type': 'text/html'}
-    #stream_info = requests.get(url, headers=headers, timeout=15)
-    stream_info = requests.get(url, timeout=15, allow_redirects = True)
+    stream_info = requests.get(url, headers=headers, timeout=15)
+    #stream_info = requests.get(url, timeout=15, allow_redirects = True)
     response = stream_info.text
     soup = BeautifulSoup(stream_info.text, features="html.parser")
 
