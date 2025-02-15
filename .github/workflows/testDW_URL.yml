@@ -1,0 +1,30 @@
+name: TestDW
+
+on:
+  workflow_dispatch:
+
+env:
+  GH_USERNAME: ${{ github.actor }}
+  
+jobs:
+
+  runCode:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test DW
+
+        run: |
+          git config --global user.name "${GH_USERNAME}"
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config user.email 
+          git config user.name
+          git rm testDW.txt
+          git commit -am "${CHANNEL_LIST}.m3u deleted"
+          chmod +x exec_testDW_URL.sh && ./exec_testDW_URL.sh
+          git add -f testDW.txt
+          git status
+          git commit -m "testDW updated."
+          git push
