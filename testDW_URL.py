@@ -18,9 +18,12 @@ Grabs the live-streaming M3U8 file from YouTube
 
     requests.packages.urllib3.disable_warnings()
    
-    ua = UserAgent()
-    print(ua.chrome)
-    header = {'User-Agent':str(ua.chrome)}
+    ua = UserAgent(os='Linux')
+    ua.random    
+    print(ua.random)
+    header = {'User-Agent':str(ua.random)}
+    #ua = UserAgent()
+    #header = {'User-Agent':str(ua.chrome)}
     print(header)
     url = "https://www.youtube.com/watch?v=tZT2MCYu6Zw"
     stream_info = requests.get(url, headers=header)
