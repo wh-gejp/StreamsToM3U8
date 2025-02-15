@@ -30,6 +30,6 @@ jobs:
           git status
           git commit -m "${CHANNEL_NAME}.m3u playlist updated."
           git fetch origin
-          gitch merge origin ${{github.ref}}
+          git merge origin ${{github.ref}}
           git push
           
