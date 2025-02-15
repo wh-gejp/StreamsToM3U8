@@ -29,4 +29,7 @@ jobs:
           git add -f ${CHANNEL_NAME}.m3u
           git status
           git commit -m "${CHANNEL_NAME}.m3u playlist updated."
+          git fetch origin
+          gitch merge origin ${{github.ref}}
           git push
+          
