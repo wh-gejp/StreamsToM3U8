@@ -200,7 +200,7 @@ with open(file_name, encoding='utf-8') as f:
             category = line[2].strip().title()
             logo = line[3].strip()
             print(
-                f'\n#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}" tvg-logo="{logo}", {channel_name}')
+                f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{channel_name}" group-title="{category}" tvg-logo="{logo}", {channel_name}')
         else:
             if urlparse(line).netloc == 'www.youtube.com':
                 grab_youtube(line)
