@@ -23,7 +23,7 @@ jobs:
           git config user.name
           git rm testDW.txt
           git commit -am "${CHANNEL_LIST}.m3u deleted"
-          chmod +x exec_testDW_URL.sh && ./exec_testDW_URL.sh
+          chmod +x exec_testDW.sh && ./exec_testDW.sh
           git add -f testDW.txt
           git status
           git commit -m "testDW updated."
