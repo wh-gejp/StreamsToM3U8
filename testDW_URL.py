@@ -37,7 +37,7 @@ Grabs the live-streaming M3U8 file from YouTube
         print(f'## Request    : {url}')
         print(f'## Status Code: {stream_info.status_code}')
         print(f'## Response.Headers: {stream_info.headers}')
-        #print(response)
+        print(response)
         return
     end = response.find('.m3u8') + 5
     tuner = 100
