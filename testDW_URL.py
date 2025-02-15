@@ -2,6 +2,7 @@
 import os
 import sys
 
+from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup
 
@@ -12,8 +13,8 @@ def grab_youtube(url: str):
 Grabs the live-streaming M3U8 file from YouTube
     :param url: The YouTube URL of the livestream
     """
-    #if '&' in url:
-    #    url = url.split('&')[0]
+    if '&' in url:
+        url = url.split('&')[0]
 
     requests.packages.urllib3.disable_warnings()
    
