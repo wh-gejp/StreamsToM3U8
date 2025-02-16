@@ -15,5 +15,5 @@
 ## Sky News || SkyNews.yt || News
 ## https://www.youtube.com/watch?v=w9uJg68CV4g
 ## DW News || DWNews.yt || News || https://i.imgur.com/8MRNFb9.png
-DW News || DWNews.yt || News || https://raw.github.com/wh-ge/StreamsToM3U8/main/dw.png
+DW News || DWNews.yt || News || https://raw.github.com/wh-gejp/StreamsToM3U8/main/dw.png
 https://www.youtube.com/watch?v=tZT2MCYu6Zw
