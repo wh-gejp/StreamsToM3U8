@@ -45,5 +45,5 @@ https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="ZDFneo" tvg-id="ZDFneo.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/zdfneohd.png",ZDFneo HD
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/veryhigh/master.m3u8
-#EXTINF:-1 tvg-name="CBS News" tvg-id="CBSNews247.us" group-title="International;Nachrichten" tvg-logo="https://raw.github.com/wh-ge/StreamsToM3U8/main/cbsn-logo.png",CBSN
+#EXTINF:-1 tvg-name="CBS News" tvg-id="CBSNews247.us" group-title="International;Nachrichten" tvg-logo="https://raw.github.com/wh-gejp/StreamsToM3U8/main/cbsn-logo.png",CBSN
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
