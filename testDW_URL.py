@@ -61,7 +61,7 @@ Grabs the live-streaming M3U8 file from YouTube
 channel_name = 'DW News'
 channel_id = 'DWNews.yt'
 category = 'News'
-logo = 'https://raw.github.com/wh-ge/StreamsToM3U8/main/dw.png'
+logo = 'https://raw.github.com/wh-gejp/StreamsToM3U8/main/dw.png'
 line = 'https://www.youtube.com/watch?v=tZT2MCYu6Zw'
 
 grab_youtube(line)
