@@ -65,18 +65,26 @@ logo = 'https://raw.github.com/wh-gejp/StreamsToM3U8/main/dw.png'
 line = 'https://www.youtube.com/watch?v=tZT2MCYu6Zw'
 
 if len(sys.argv) == 1:
-    print(f'Len=1; MUser: {sys.argv[0]}')
+    print(f'Len=1; Script: {sys.argv[0]}')
+    print(f'User and Secure Token missing! Script will be terminated.')
+    exit()
 else:    
     if len(sys.argv) == 2:
         print(f'Len=2; MUser: {sys.argv[0]}')
         print(f'Len=2; MUser: {sys.argv[1]}')
+        print(f'Secure Token missing! Script will be terminated.')
         exit()
+    else: 
+    if len(sys.argv) == 3:
+        print(f'Len=3; Script:  {sys.argv[0]}')
+        print(f'Len=3; MUser:   {sys.argv[1]}')
+        print(f'Len=3; MSecret: {sys.argv[2]}')
     else: 
         print(f'Len: {len(sys.argv)}')
         print(sys.argv[0])
         print(sys.argv[1])
         print(f'\nStartargument Länge: {len(sys.argv)}')
-        print('Only one filename accepted! Script will be terminated.')
+        print('Too many arguments! Script will be terminated.')
         exit()
 grab_youtube(line)
             
