@@ -65,14 +65,14 @@ logo = 'https://raw.github.com/wh-gejp/StreamsToM3U8/main/dw.png'
 line = 'https://www.youtube.com/watch?v=tZT2MCYu6Zw'
 
 if len(sys.argv) == 1:
-    print(f'MUser: {sys.argv[0]}')
+    print(f'Len=1; MUser: {sys.argv[0]}')
+else    
     if len(sys.argv) == 2:
-        file_name = str(sys.argv[1])
-        if not os.path.isfile(file_name):
-            print(sys.argv[1])
-            print('Argument must be an existing filename! Script will be terminated.')
-            exit()
+        print(f'Len=2; MUser: {sys.argv[0]}')
+        print(f'Len=2; MUser: {sys.argv[1]}')
+        exit()
     else: 
+        print(f'Len: {len(sys.argv)}')
         print(sys.argv[0])
         print(sys.argv[1])
         print(f'\nStartargument Länge: {len(sys.argv)}')
