@@ -18,7 +18,7 @@ jobs:
 
         run: |
           echo Mailuser: ${MAIL_USER} :
-          git config --global user.name "${MAIL_USER}"
+          git config --global user.name "${GH_USERNAME}"
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
