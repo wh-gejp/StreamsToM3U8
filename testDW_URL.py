@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 channels = []
 
-def grab_youtube(url: str):
+def grab_youtube(user: str, secret: str, url: str):
     """
 Grabs the live-streaming M3U8 file from YouTube
     :param url: The YouTube URL of the livestream
@@ -74,9 +74,13 @@ elif (len(sys.argv) == 2):
     print(f'Secure Token missing! Script will be terminated.')
     exit()
 elif (len(sys.argv) == 3): 
-    print(f'Len=3; Script:  {sys.argv[0]}')
-    print(f'Len=3; MUser:   {sys.argv[1]}')
-    print(f'Len=3; MSecret: {sys.argv[2]}')
+    #print(f'Len=3; Script:  {sys.argv[0]}')
+    #print(f'Len=3; MUser:   {sys.argv[1]}')
+    #print(f'Len=3; MSecret: {sys.argv[2]}')
+    mUser = {sys.argv[1]}
+    mSecret = {sys.argv[2]}
+    print (f'mUser: {mUser}, mSecret: {mSecret}')
+    grab_youtube(mUser, mSecret, line)
 else: 
     print(f'Len: {len(sys.argv)}')
     print(sys.argv[0])
@@ -84,7 +88,6 @@ else:
     print(f'\nStartargument Länge: {len(sys.argv)}')
     print('Too many arguments! Script will be terminated.')
     exit()
-grab_youtube(line)
             
 # Remove temp files from project dir
 if 'temp.txt' in os.listdir():
