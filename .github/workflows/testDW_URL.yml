@@ -17,6 +17,7 @@ jobs:
       - name: Test DW
 
         run: |
+          echo Mailuser: ${MAIL_USER} :
           git config --global user.name "${MAIL_USER}"
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
