@@ -5,7 +5,7 @@ on:
 
 env:
   GH_USERNAME: ${{ github.actor }}
-  Mail_User: ${{ secrets.MAIL_USER }}
+  MAIL_USER: ${{ secrets.MAIL_USER }}
 jobs:
 
   runCode:
