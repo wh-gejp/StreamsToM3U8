@@ -1,5 +1,6 @@
 #!/bin/bash
 User=$1
+Secret=$2
 echo "User: ${User} :"
 python3 -m pip install requests
 python3 -m pip install fake-useragent
