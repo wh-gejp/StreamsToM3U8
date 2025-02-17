@@ -18,13 +18,14 @@ jobs:
 
         run: |
           echo Mailuser: ${{ secrets.MAIL_USER}} :
+          echo Mailuser: ${MAIL_USER} : 
           git config --global user.name "${GH_USERNAME}"
           git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
           git config user.email 
           git config user.name
           git rm testDW.txt
           git commit -am "${CHANNEL_LIST}.m3u deleted"
-          chmod +x exec_testDW.sh && ./exec_testDW.sh
+          chmod +x exec_testDW.sh && ./exec_testDW.sh ${MAIL_USER}
           git add -f testDW.txt
           git status
           git commit -m "testDW updated."
