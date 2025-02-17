@@ -1,2 +1,0 @@
-Len=2; MUser: testDW_URL.py
-Len=2; MUser: test@gmail.com
