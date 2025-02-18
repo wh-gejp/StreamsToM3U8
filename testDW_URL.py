@@ -23,7 +23,8 @@ Grabs the live-streaming M3U8 file from YouTube
     response = session.get(protected_url)
     print(f"Status: {response.status_code}")
     print(response.text)
-  
+    
+    """
     ua = UserAgent(os='Linux')
     ua.random    
     print(ua.random)
@@ -34,7 +35,8 @@ Grabs the live-streaming M3U8 file from YouTube
     url = "https://www.youtube.com/watch?v=tZT2MCYu6Zw"
     stream_info = requests.get(url, headers=header)
     print(stream_info)
-   
+    """
+    stream_info = response
     response = stream_info.text
     soup = BeautifulSoup(stream_info.text, features="html.parser")
 
@@ -42,8 +44,8 @@ Grabs the live-streaming M3U8 file from YouTube
         print("https://github.com/ExperiencersInternational/tvsetup/raw/main/staticch/no_stream_2.mp4")
         print(f'## Request    : {url}')
         print(f'## Status Code: {stream_info.status_code}')
-        print(f'## Response.Headers: {stream_info.headers}')
-        print(response)
+        #print(f'## Response.Headers: {stream_info.headers}')
+        #print(response)
         return
     end = response.find('.m3u8') + 5
     tuner = 100
