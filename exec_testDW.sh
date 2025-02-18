@@ -2,7 +2,7 @@
 User=$1
 Secret=$2
 echo "User: ${User} :"
-# echo "Secret User: ${{ secrets.MAIL_USER}} :"
+# echo "Secret User: ${{ secrets.MAIL_USER}} :" # git hub Variable will not be substituted
 python3 -m pip install requests
 python3 -m pip install fake-useragent
 python3 -m pip install beautifulsoup4
