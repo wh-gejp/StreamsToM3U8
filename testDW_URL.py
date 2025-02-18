@@ -13,11 +13,11 @@ def grab_youtube(user: str, secret: str, protected_url: str):
 Grabs the live-streaming M3U8 file from YouTube
     :param url: The YouTube URL of the livestream
     """
+    url = 'https://accounts.google.com/login'
     if '&' in url:
         url = url.split('&')[0]
 
     requests.packages.urllib3.disable_warnings()
-    url = 'https://accounts.google.com/login'
     session = requests.Session()
     session.post(url, data={'username': user, 'password': secret})
     response = session.get(protected_url)
