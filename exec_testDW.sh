@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 User=$1
 Secret=$2
 echo "User: ${User} :"
