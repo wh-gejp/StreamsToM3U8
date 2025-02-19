@@ -25,7 +25,7 @@ URL
 - Logo URL - the URL of the logo file for the channel. The file format should be .png.
 - URL - the URL of the stream. It should be the full URL (including "https://www."), and not a shortened version (youtu.be links are not supported)
 
-3. After saving changes, either wait for the cron job to run (this repo's job runs at 01:40, 05:40, 09:40, 13:40, 17:40 and 21:40), or start the `LinkGrabber` workflow manually (repo > Actions tab > Grabb_And_Merge > Run workflow).
+3. After saving changes, either wait for the cron job to run (this repo's job runs at 01:40, 05:40, 09:40, 13:40, 17:40 and 21:40), or start the `Grabb_And_Merge` workflow manually (repo > Actions tab > Grabb_And_Merge > Run workflow).
 
 You can also run the program locally by `python grabber.py > ./streams.m3u8` or by `chmod +x exec_grabber.sh && ./exec_grabber.sh`.
 
