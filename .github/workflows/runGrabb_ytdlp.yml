@@ -1,0 +1,34 @@
+name: TestDW
+
+on:
+  workflow_dispatch:
+
+env:
+  GH_USERNAME: ${{ github.actor }}
+  MAIL_USER: ${{ secrets.MAIL_USER }}
+  MAIL_SECRET: ${{ secrets.MAIL_SECRET }}
+jobs:
+
+  runCode:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test DW
+
+        run: |
+          echo Mailuser: ${{ secrets.MAIL_USER}} :
+          echo "Mailuser: ${MAIL_USER} :" 
+          echo "MailSecret: ${MAIL_SECRET} :" 
+          git config --global user.name "${GH_USERNAME}"
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config user.email 
+          git config user.name
+          git rm testYTdlp.txt
+          git commit -am "${CHANNEL_LIST}.m3u deleted"
+          chmod +x exec_testYTdlp.sh && ./exec_testYTdlp.sh ${MAIL_USER} ${MAIL_SECRET}
+          git add -f testYTdlp.txt
+          git status
+          git commit -m "testYTdlp updated."
+          git push
