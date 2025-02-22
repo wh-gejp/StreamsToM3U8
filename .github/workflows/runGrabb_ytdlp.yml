@@ -27,7 +27,7 @@ jobs:
           git config user.name
           git rm testYTdlp.txt
           git commit -am "${CHANNEL_LIST}.m3u deleted"
-          chmod +x ytdlp_2025.02.19
+          chmod +x yt-dlp_2025.02.19
           chmod +x exec_grabbYTdlp.sh && ./exec_grabbYTdlp.sh ${MAIL_USER} ${MAIL_SECRET}
           git add -f testYTdlp.txt
           git status
