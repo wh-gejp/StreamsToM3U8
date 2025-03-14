@@ -1,9 +1,7 @@
 name: Grabb_And_Merge
 
 on:
-  schedule:
-    - cron: '50 16 * * *'
-
+  
   pull_request:
     branches: [ main ]
 
